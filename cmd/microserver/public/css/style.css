@@ -1,17 +1,55 @@
 
+/**/
+/* typewriter text effect */
+/**/
+@import url('https : //fonts.googleapis.com/css?family=Source+Code+Pro');
+
 	/* Base style */
 html {
 	font-size : 24px;
 }
 
 body {
-	margin           : 0 0 40px;
+	display               : grid;
 
-	background-color : #FFFFFF;
-	font-family      : 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
-	font-weight      : 200;
-	color            : #666666;
-	word-break       : break-word;
+	min-height            : 100vh;
+	margin                : 0 0 40px;
+
+	background-color      : #FFFFFF;
+	font-family           : 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+	font-weight           : 200;
+	color                 : #666666;
+	word-break            : break-word;
+
+	grid-template-columns : 300px 1fr 150px;
+	grid-template-rows    : min-content 1fr min-content;
+}
+
+nav {
+	min-height       : 100vh;
+	padding          : 0 10px;
+
+	background-color : #3da35d;
+	color            : #FFFFFF;
+	text-align       : right;
+	box-shadow       : 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+	grid-row         : 2;
+	grid-column      : 1 / 2;
+}
+
+main {
+	/*padding     : 0 20px;*/
+
+	grid-row    : 2;
+	grid-column : 2 / 3;
+}
+
+aside {
+	padding     : 0 10px;
+
+	grid-row    : 2;
+	grid-column : 3 / 4;
 }
 
 a, a:visited, a:hover, a:link {
@@ -85,7 +123,10 @@ svg {
 
 	width               : 33.33%;
 
-	text-align          : center;
+	/*text-align          : center;*/
+	text-align          : right;
+	border              : 2px solid blue;
+	border-radius       : 5px;
 	border-bottom-color : currentColor;
 	border-bottom-style : solid;
 }
@@ -137,7 +178,9 @@ svg {
 .bloc-doc      { color: #69B0CA; }
 
 /* Custom */
-#map-container {}
+#map-container {
+	width : 100%;
+}
 
 #map {
 	width        : 100%;
@@ -160,7 +203,6 @@ svg {
 	stroke-width : 4;
 }
 
-
 #roads {
 	width        : 100%;
 
@@ -177,7 +219,6 @@ svg {
 	stroke-width : 3;
 }
 
-
 #buildings {
 	width        : 100%;
 
@@ -193,7 +234,6 @@ svg {
 
 	stroke-width : 2;
 }
-
 
 .intro-links {
 	text-align : right;
@@ -251,4 +291,8 @@ svg {
 
 @media (max-width: 480px) {
 	.col-container { padding: 0px; }
+}
+
+body{
+	padding : 40px;
 }

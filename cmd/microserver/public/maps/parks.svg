@@ -5,7 +5,7 @@
 <!-- viewBox="350 350 1700 2408"  -->
 
 			<svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
-				viewBox="0 0 2102 2686" 
+				viewBox="350 0 2102 2686" 
 				id="parks" 
 				onclick="playAnimationSequence();">
 
