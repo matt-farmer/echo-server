@@ -35,10 +35,13 @@ async function playAnimationSequence() {
 		document.getElementById("map-container").innerHTML = ""; // clear any existing content
 		
 		// await renderPromiseWrapper('background', "scenario-sync", 10);
-		await renderPromiseWrapper('trees',"sync", 20);
-		await renderPromiseWrapper('roads',"sync", 15);
+		// await renderPromiseWrapper('trees',"sync", 20);
+		await renderPromiseWrapper('roads',"scenario-sync", 10);
+		await renderPromiseWrapper('parks',"sync", 120);
+		await renderPromiseWrapper('buildings',"delayed", 120);
+		await renderPromiseWrapper('trees',"sync", 15);
 		await renderPromiseWrapper('blocks',"scenario-sync", 5);
-		await renderPromiseWrapper('lots',"sync", 15);
+		await renderPromiseWrapper('lots',"sync", 10);
 
 		
 		console.log('animation complete.');

@@ -169,6 +169,22 @@ svg {
 	stroke-width : 3;
 }
 
+#parks {
+	width        : 100%;
+
+	color        : #3da35d;
+
+	stroke-width : 3;
+}
+
+
+#buildings {
+	width        : 100%;
+
+	color        : #febf9a;
+
+	stroke-width : 3;
+}
 
 #trees {
 	width        : 100%;
