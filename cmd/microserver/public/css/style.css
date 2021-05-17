@@ -144,6 +144,41 @@ svg {
 	stroke-width : 4;
 }
 
+#lots {
+	width        : 100%;
+
+	color        : #5aa8c5;
+
+	stroke-width : 4;
+}
+
+#blocks {
+	width        : 100%;
+
+	color        : #5aa8c5;
+
+	stroke-width : 4;
+}
+
+
+#roads {
+	width        : 100%;
+
+	color        : #d3d3da;
+
+	stroke-width : 3;
+}
+
+
+#trees {
+	width        : 100%;
+
+	color        : #4fe084;
+
+	stroke-width : 2;
+}
+
+
 .intro-links {
 	text-align : right;
 }
